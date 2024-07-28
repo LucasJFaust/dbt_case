@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fct_vendas
+    description: >
+      Tabela fatos com as vendas da Northwind por cliente, fornecedor
+      funcionários e transportadora.
+    columns:
+      - name: sk_vendas
+        description: Chave primária da tabela fatos vendas.
+        tests:
+          - unique
+          - not_null
+
+          
